@@ -16,7 +16,7 @@
     <div id="more-info">
       <p>This page uses <a href="http://socket.io/" target="_blank" rel="nofollow">web sockets</a> to broadcast the screen size of every Fourword visitor in real-time.</p>
       <p>The result is a visual representation of the traffic that's hitting the site.</p>
-      <p><a href="https://fourword.fourkitchens.com/article/screensizes-org-visualize-viewports-real-time">Read about screensizes.</a></p>
+      <p><a href="https://fourword.fourkitchens.com/article/screensizes-visualize-viewports-real-time">Read about screensizes.</a></p>
     </div>
 
     <!-- screens will be populated here -->

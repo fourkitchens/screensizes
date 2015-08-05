@@ -14,6 +14,13 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 
+// Allow Fourword XHR as an origin
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", req.protocol + "://fourword.fourkitchens.com");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Expose static assets
 app.use(express.static(__dirname + '/public', {redirect: false}));
 

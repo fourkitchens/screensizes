@@ -18,7 +18,7 @@ var io = require('socket.io')(http);
 app.use(function(req, res, next) {
   var protocol = (req.headers['x-forwarded-proto'] === 'https') ? 'https' : 'http';
 
-  res.header("Access-Control-Allow-Origin", protocol + "://fourword.fourkitchens.com");
+  res.header("Access-Control-Allow-Origin", protocol + "://fourkitchens.com");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
